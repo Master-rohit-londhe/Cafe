@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body
+        {
+            margin:0px;
+            padding:0px;
+            }
+        .style1
+        {
+            width: 100%;
+            height: 328px;
+        }
+        .style2
+        {
+            height: 16px;
+            width: 100%;
+        }
+        .style3
+        {
+            height: 56px;
+            width: 100%;
+        }
+        .style4
+        {
+            height: 65px;
+            width: 100%;
+        }
+        .style5
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style2">
+                <asp:Image ID="Image1" runat="server" Height="156px" 
+                    ImageUrl="~/images/canada-corporate-beverage-service-event-catering-logo-design.png" 
+                    Width="100%" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style5">
+                <asp:Menu ID="Menu2" runat="server" BackColor="Black" 
+                    DynamicHorizontalOffset="2" Font-Names="tempus sans itc, xx-large" 
+                    Font-Size="X-Large" ForeColor="White" Height="16px" Orientation="Horizontal" 
+                    RenderingMode="Table" StaticSubMenuIndent="10px" Width="1339px">
+                    <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#B5C7DE" />
+                    <DynamicSelectedStyle BackColor="#507CD1" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/menu.aspx" Text="Menu" Value="Menu"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Booking.aspx" Text="Booking" Value="Booking">
+                            <asp:MenuItem NavigateUrl="~/Book.aspx" Text="Birthday" Value="Birthday">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/confrence.aspx" Text="Conference" 
+                                Value="Conference"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/aboutus.aspx" Text="About US" Value="About US">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/contact.aspx" Text="Contact US" Value="Contact US">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/feedback.aspx" Text="Feedback" Value="Feedback">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/login.aspx" Text="Login" Value="Login">
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#507CD1" />
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td class="style5">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="Black" class="style4" width="100%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <asp:Image ID="Image2" runat="server" Height="47px" 
+                    ImageUrl="~/images/tiw.png" Width="71px" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Image ID="Image3" runat="server" Height="47px" Width="71px" 
+                    ImageUrl="~/images/face.png" />
+&nbsp;&nbsp;
+                <asp:Image ID="Image4" runat="server" Height="47px" Width="71px" 
+                    ImageUrl="~/images/gool.png" />
+&nbsp;&nbsp;&nbsp;
+                <asp:Image ID="Image6" runat="server" Height="47px" Width="71px" 
+                    ImageUrl="~/images/insta.png" />
+&nbsp;
+                <asp:Image ID="Image7" runat="server" Height="47px" Width="71px" 
+                    ImageUrl="~/images/y.png" />
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="Black" style="margin-left: 200px" class="style3">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" ForeColor="White" 
+                    Text="Copyright © 2018 Cafiix - All Rights Reserved."></asp:Label>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
